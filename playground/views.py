@@ -12,4 +12,7 @@ def say_hello(request):
         # Transform
         # Send email
         
-    return HttpResponse('Hello World')    
+    return HttpResponse('Hello World')
+
+def index(request):
+    return render(request, 'index.html')
