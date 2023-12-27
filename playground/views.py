@@ -15,4 +15,4 @@ def say_hello(request):
     return HttpResponse('Hello World')
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'name': '[Person Name]'})

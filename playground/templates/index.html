@@ -1,15 +1,22 @@
 <html>
     <head>
-        <title> learningDjango </title>
+        <title> Learning Django! </title>
         <meta charset="utf-8">
+        {% comment %} <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico"> {% endcomment %}
     </head>
     <body>
         <div align="center">
-            <h1> Welcome to my brand new website to learn Django! </h1>
+            
+            {% if name %}
+            <h1> Welcome, {{name}}! This is my brand new website to learn Django! </h1>
+            {% else %}
+            <h1> Welcome, Guest! This is my brand new website to learn Django! </h1>
+            {% endif %}
+
         </div>
         <hr>
 
-        <h2> Get to know more about me</h2>
+        <h2> Get to know more about me:</h2>
         
         <ul type="disc">
             <li>My name's Paulo Moita;</li>
