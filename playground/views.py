@@ -13,6 +13,3 @@ def say_hello(request):
         # Send email
         
     return HttpResponse('Hello World')
-
-def index(request):
-    return render(request, 'index.html', {'name': '[Person Name]'})

@@ -1,0 +1,42 @@
+{% load static%}
+
+<html>
+    <head>
+        <title> Learning Django! </title>
+        <meta charset="utf-8">
+        {% comment %} <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico"> {% endcomment %}
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/stylestatic.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link rel="shortcut icon" type="imagex/png" href="static/images/icon.ico">
+    </head>
+    <body>
+        <div class="titulo">
+            
+            {% comment %} {% if name %}
+            <h1> Welcome, {{name}}! This is my brand new website to learn Django! </h1>
+            {% else %}
+            <h1> Welcome, Guest! This is my brand new website to learn Django! </h1>
+            {% endif %} {% endcomment %}
+
+            <h1> Hi, welcome to my own space! </h1>
+
+        </div>
+
+        <div class="line">
+        <hr>
+        </div>
+        
+        <div class="content">
+            <h2> Get to know more about me:</h2>
+            
+            <ul type="disc">
+                <li>My name's Paulo Moita;</li>
+                <li>I'm 19 years old;</li>
+                <li>I go to college at ULBRA and study <b>Software Engineering;</b></li>
+                <li>I'm currently working at Unimed Palmas at the IT sector;</li>
+            </ul>
+        </div>
+    </body>
+</html>
